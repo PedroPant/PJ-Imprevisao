@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img id="logo"  src="imagens/logo.png" alt="Logo"/>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#sec1">Projeto</a>
+                </li>
+                <li>
+                    <a href="#sec2">Imprevisão</a>
+                </li>
+                <li>
+                    <a href="#sec3">Sobre mim</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- -- SECTION 1 -- -->
+    <section id="sec1">
+        <h1 class="title">
+            Projeto
+        </h1>
+            <p>
+                Esta página é um projeto protótipo para a aprendizagem de tecnologias Web Front End do mini-curso ASCII Notes.
+            </p>
+                <p>
+                    Inicialmente utilizaremos HTML, CSS e JS puros e posteriormente será refatorado com o framework ReactJS e StyledComponents.
+                </p>
+                    <p> 
+                        Este site informa a previsão, previamente determinada, do tempo de algumas cidades, na seção Imprevisão exibindo o Nome da cidade, a temperatura atual, o 
+                    </p>
+    </section>
+
+    <!-- -- SECTION 2 -- -->
+
+    <section id="sec2">
+        <h1 class="title">
+            Imprevisão
+        </h1>
+        <article id="caixatempo">
+            <form id="cidade">
+                <p>
+                Escolha uma cidade:
+                </p>
+                    <select name="cidade" id="cidade-select" onchange="trocacity(event)">
+                        <option >Selecione sua cidade</option>
+                        <option value="0"> Uberlândia </option>
+                        <option value="1"> São paulo </option>
+                        <option value="2"> Curitiba </option>
+                        <option value="3"> Rio de Janeiro </option>
+                        <option value="4"> Caldas Novas </option>
+                    </select>
+            </form>
+
+                <div id="tempo">
+                    <img id="clima" src="imagens/nublado.png">
+                    <p id="text_clima">Selecione uma cidade ao lado</p>
+                </div>
+        </article>
+    </section>
+
+    <!-- -- SECTION 3 -- -->
+
+    <section id="sec3">
+        <h1 class="title">
+            Sobre Mim
+        </h1>
+         
+        <article id="sobre">
+            <img src="imagens/FotoMatheus.png" alt="Pedro" class="fotos">
+            <h4>
+                Matheus
+            </h4>
+            <p>
+                Olá, Meu nome é Matheus Henrique,
+                tenho 19 anos e sou apaixonado por computação, atualmente sou técnico em 
+                informática e estou cursando Ciências da computação.
+            </p>
+            <p>
+                <a id="mail" href="Mailto:matheusmhvs1@gmail.com"><img src="imagens/email.png" alt="email" id="mailimg"> EMAIL</a> <a id="linkedin" href="https://www.linkedin.com/in/matheush1/"><img src="imagens/linkedin.png" alt="" id="linkenidimg">LINKEDIN</a> <a id="git" href="https://github.com/paysandu"><img src="imagens/git.png" alt="" id="gitimg" >GITHUB</a>
+            </p>
+        </article>
+        <article id="sobre">
+            <img src="imagens/FotoPedro.png" alt="Pedro" class="fotos">
+            <h4>
+                Pedro Henrique de Oliveira
+            </h4>
+            <p>
+                Me chamo Pedro, tenho 22 anos estou cursando em Ciência da Computação na Universidade Federal de Uberlândia.
+                Gosto de estar sempre em constante evolução e saindo da minha zona de conforto, para assim continuar evoluindo 
+                como pessoa e profissional. Tenho facilidade em trabalhar em equipe, sou comunicativo, tenho fortes traços de
+                liderança e sou organizado.
+            </p>
+            <p>
+            <a id="mail" href="Mailto:pedroho.9@homail.com"><img src="imagens/email.png" alt="email" id="mailimg"> EMAIL</a> <a id="linkedin" href="https://www.linkedin.com/in/pedro-henrique-973193214/"><img src="imagens/linkedin.png" alt="" id="linkenidimg">LINKEDIN</a> <a id="git" href="https://github.com/PedroPant"><img src="imagens/git.png" alt="" id="gitimg" >GITHUB</a>
+            </p>
+        </article>
+    </section>
+    <footer id="caixafo">
+
+        <p id="final">Feito com amor por Matheus Henrique e Pedro Henrique</p>
+    </footer>
+</body>
+</html>
